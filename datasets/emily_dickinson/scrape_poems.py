@@ -64,9 +64,5 @@ for i in range(1,32) :
 			text_file.close()
 			count += 1
 
-
-# os.remove('for_her.txt')
-# os.remove('for_him.txt')
-
 print(str(count) + ' new poems scrapped')
-os.system('poweroff')
+# os.system('poweroff')
