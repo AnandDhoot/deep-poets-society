@@ -27,25 +27,6 @@ def signal_handler(signal, frame):
 
 url = "http://www.poemhunter.com"
 
-# html_page = urllib.request.urlopen(url+ '/emily-dickinson/poems/')
-# soup_ = BS(html_page, 'html.parser')
-
-# scraping from the front page
-# for link in soup_.findAll('a'):
-# 	s = link.get('href')
-# 	if len(str(s)) > 6 and str(s)[:6] == '/poem/':
-# 		file = str(s).split('/')[-2]
-# 		if os.path.isfile(file+'.txt'):
-# 			print(file + ' file exists')
-# 			continue
-# 		print(file + ' file does not exist')
-# 		html = urllib.request.urlopen(url+s).read()
-# 		soup = BS(html, 'html.parser')
-# 		text_file = open(file+'.txt', "w")
-# 		text_file.write(strip_tags(str(soup.find_all('p')[1].prettify())))
-# 		text_file.close()
-# 		count += 1
-
 for i in range(1,32) :
 	html_page = urllib.request.urlopen(url+ '/emily-dickinson/poems/page-'+str(i))
 	soup_ = BS(html_page, 'html.parser')
@@ -65,4 +46,3 @@ for i in range(1,32) :
 			count += 1
 
 print(str(count) + ' new poems scrapped')
-# os.system('poweroff')

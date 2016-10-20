@@ -46,4 +46,3 @@ for i in range(1,12) :
 			count += 1
 
 print(str(count) + ' new poems scrapped')
-# os.system('poweroff')
