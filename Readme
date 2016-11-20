@@ -1,0 +1,7 @@
+Deep Poets Society
+(Anand Dhoot, 130070009) (Anmol Mishra, 150050041) (Maulik Shah, 13D100004) (Utkarsh Kumar, 130050022)
+
+Required packages - Torch,
+
+To generate the outputs on the trained model, run the following command from the 'Code' directory- 
+th sample.lua -checkpoint cv/checkpoint_253000.t7 -length 2000 > out2000.txt
